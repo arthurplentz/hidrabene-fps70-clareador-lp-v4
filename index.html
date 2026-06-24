@@ -116,7 +116,9 @@
     .qty-tag { position:absolute; top:-9px; left:14px; background:var(--pink-fluor); color:#fff; font-family:var(--font-title);
       font-size:9px; font-weight:800; letter-spacing:0.05em; text-transform:uppercase; padding:3px 8px; border-radius:var(--radius-lg); }
     .qty-prices { text-align:right; flex-shrink:0; }
-    .qty-now { display:block; font-family:var(--font-title); font-size:16px; font-weight:800; color:var(--pink-fluor); }
+    .qty-now { display:block; font-family:var(--font-title); font-size:18px; font-weight:800; color:var(--pink-fluor); line-height:1.1; white-space:nowrap; }
+    .qty-now small { font-size:11px; font-weight:700; color:var(--dark); }
+    .qty-kit { display:block; font-family:var(--font-title); font-size:11px; color:var(--ink-soft); margin-top:1px; white-space:nowrap; }
     .qty-old { display:block; font-family:var(--font-title); font-size:11px; color:var(--gray); text-decoration:line-through; }
 
     /* raspadinha */
@@ -511,24 +513,24 @@
         <button class="qty-row selected" data-kit="1-unidade" data-now="R$ 34,90" data-old="R$ 49,90" onclick="selQty(this)">
           <span class="qty-radio" aria-hidden="true"></span>
           <span class="qty-info"><span class="qty-name">1 Unidade</span><span class="qty-sub">Tratamento de 1 mês</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
-          <span class="qty-prices"><span class="qty-now">R$ 34,90</span><span class="qty-old">R$ 49,90</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 34,90<small>/un</small></span><span class="qty-kit">unidade avulsa</span></span>
         </button>
         <button class="qty-row" data-kit="3-unidades" data-now="R$ 74,90" data-old="R$ 149,90" onclick="selQty(this)">
           <span class="qty-tag">Mais vendido</span>
           <span class="qty-radio" aria-hidden="true"></span>
-          <span class="qty-info"><span class="qty-name">3 Unidades</span><span class="qty-sub">R$ 24,96/un · 3 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
-          <span class="qty-prices"><span class="qty-now">R$ 74,90</span><span class="qty-old">R$ 149,90</span></span>
+          <span class="qty-info"><span class="qty-name">3 Unidades</span><span class="qty-sub">Tratamento de 3 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 24,96<small>/un</small></span><span class="qty-kit">R$ 74,90 no kit</span></span>
         </button>
         <button class="qty-row" data-kit="6-unidades" data-now="R$ 134,90" data-old="R$ 299,90" onclick="selQty(this)">
           <span class="qty-radio" aria-hidden="true"></span>
-          <span class="qty-info"><span class="qty-name">6 Unidades</span><span class="qty-sub">R$ 22,48/un · 6 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
-          <span class="qty-prices"><span class="qty-now">R$ 134,90</span><span class="qty-old">R$ 299,90</span></span>
+          <span class="qty-info"><span class="qty-name">6 Unidades</span><span class="qty-sub">Tratamento de 6 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 22,48<small>/un</small></span><span class="qty-kit">R$ 134,90 no kit</span></span>
         </button>
         <button class="qty-row" data-kit="10-unidades" data-now="R$ 214,90" data-old="R$ 499,90" onclick="selQty(this)">
           <span class="qty-tag">Melhor oferta</span>
           <span class="qty-radio" aria-hidden="true"></span>
-          <span class="qty-info"><span class="qty-name">10 Unidades</span><span class="qty-sub">R$ 21,49/un · 10 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
-          <span class="qty-prices"><span class="qty-now">R$ 214,90</span><span class="qty-old">R$ 499,90</span></span>
+          <span class="qty-info"><span class="qty-name">10 Unidades</span><span class="qty-sub">Tratamento de 10 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 21,49<small>/un</small></span><span class="qty-kit">R$ 214,90 no kit</span></span>
         </button>
       </div>
 

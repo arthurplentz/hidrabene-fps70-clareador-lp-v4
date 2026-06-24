@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./assets/brand/favicon.png" />
+  <link rel="apple-touch-icon" href="./assets/brand/favicon.png" />
+  <title>Hidrabene — Protetor Solar Facial FPS 70 Clareador</title>
+  <meta name="description" content="FPS 70 amplo espectro com Niacinamida 5%: clareia, uniformiza o tom e controla o brilho. Incolor, toque seco, para todo tom de pele." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <!-- LCP: pré-carrega a 1ª imagem do hero -->
+  <link rel="preload" as="image" href="./assets/images/hero-card1.webp" fetchpriority="high" />
+
+  <!-- Fontes (assíncrono, sem bloquear o render) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Display:ital,wght@1,600&display=swap" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+Display:ital,wght@1,600&display=swap" /></noscript>
+
+  <style>
+    /* ─── FALLBACKS COM MÉTRICA AJUSTADA (anti-CLS) ─── */
+    @font-face { font-family:'Poppins-fallback'; src:local('Arial'); size-adjust:112.15%; ascent-override:93.62%; descent-override:31.21%; line-gap-override:0%; }
+    @font-face { font-family:'Barlow-fallback'; src:local('Arial'); size-adjust:96%; ascent-override:105%; descent-override:26%; line-gap-override:0%; }
+    @font-face { font-family:'NotoSerif-fallback'; src:local('Georgia'); size-adjust:97%; ascent-override:100%; descent-override:27%; line-gap-override:0%; }
+
+    /* ─── TOKENS ─────────────────────────────────────── */
+    :root {
+      --pink-light:#F9F6F5; --pink-soft:#FDEDF1; --pink-main:#F8D7DE; --pink-mid:#E191A0;
+      --pink-accent:#E56C91; --pink-fluor:#F50A78;
+      --dark:#1D1D1B; --gray:#A69DA2; --gray-light:#F0EDED; --white:#FFFFFF;
+      --ink-soft:#5a545a; --bg-soft:#F4F1F0;
+      --font-title:'Poppins','Poppins-fallback',sans-serif;
+      --font-body:'Barlow','Barlow-fallback',sans-serif;
+      --font-display:'Noto Serif Display','NotoSerif-fallback',serif;
+      --radius-sm:10px; --radius-md:18px; --radius-lg:40px; --radius-xl:28px;
+      --max-w:430px; --content-pad:20px;
+    }
+
+    /* ─── RESET ──────────────────────────────────────── */
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    html { font-size:16px; -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+    body { font-family:var(--font-body); color:var(--dark); background:var(--white); max-width:var(--max-w); margin:0 auto; overflow-x:hidden; }
+    img { display:block; max-width:100%; }
+    a { color:inherit; text-decoration:none; }
+    button { cursor:pointer; font-family:var(--font-title); border:none; background:none; }
+    section { position:relative; }
+    em { font-family:var(--font-display); font-style:italic; }
+
+    /* ─── PLACEHOLDER (preencher depois) ─────────────── */
+    .ph { width:100%; display:flex; align-items:center; justify-content:center; text-align:center;
+      background:repeating-linear-gradient(135deg,var(--pink-soft),var(--pink-soft) 14px,#fbe3ea 14px,#fbe3ea 28px);
+      color:var(--pink-accent); font-family:var(--font-title); font-size:11px; font-weight:700; letter-spacing:0.08em;
+      text-transform:uppercase; padding:18px; border-radius:var(--radius-md); line-height:1.5; }
+    .ph.dark { background:repeating-linear-gradient(135deg,#26262420,#26262420 14px,#ffffff10 14px,#ffffff10 28px); color:#fff; }
+    .ph::before { content:"▢ "; }
+
+    /* ─── BOTÕES ─────────────────────────────────────── */
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:9px; font-family:var(--font-title);
+      font-size:14px; font-weight:700; letter-spacing:0.01em; padding:15px 26px; border-radius:var(--radius-lg);
+      transition:transform .15s ease, box-shadow .15s ease, opacity .15s ease; }
+    .btn:active { transform:translateY(1px); }
+    .btn-fluor { background:var(--pink-fluor); color:#fff; box-shadow:0 10px 26px rgba(245,10,120,0.26); width:100%; }
+    .btn-dark { background:var(--dark); color:#fff; }
+    .btn-ghost { color:var(--dark); font-weight:600; }
+    .btn-ghost svg { width:16px; height:16px; stroke:currentColor; }
+    .btn svg.arr { width:16px; height:16px; stroke:currentColor; fill:none; }
+
+    /* ─── PROMO BAR ──────────────────────────────────── */
+    .promo { background:var(--pink-fluor); color:#fff; text-align:center; font-family:var(--font-title);
+      font-size:11.5px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:9px 16px; }
+    .promo b { font-weight:800; }
+
+    /* ─── NAV ────────────────────────────────────────── */
+    .nav { position:sticky; top:0; z-index:60; display:flex; align-items:center; justify-content:space-between;
+      padding:12px var(--content-pad); background:rgba(255,255,255,0.92); backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--gray-light); }
+    .nav-logo img { height:22px; width:auto; display:block; }
+    .nav-links { display:none; }
+    .nav-cta { background:var(--pink-fluor); color:#fff; font-family:var(--font-title); font-size:12.5px;
+      font-weight:700; padding:10px 18px; border-radius:var(--radius-lg); }
+
+    /* ─── HERO / PDP ─────────────────────────────────── */
+    .pdp { padding:14px var(--content-pad) 8px; }
+    .gallery-main { width:100%; aspect-ratio:1/1; border-radius:var(--radius-md); overflow:hidden; background:var(--pink-light); }
+    .gallery-main img { width:100%; height:100%; object-fit:cover; }
+    .gallery-thumbs { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:8px; }
+    .gallery-thumb { aspect-ratio:1/1; border-radius:var(--radius-sm); overflow:hidden; background:var(--pink-light);
+      border:2px solid transparent; cursor:pointer; }
+    .gallery-thumb.active { border-color:var(--pink-fluor); }
+    .gallery-thumb img { width:100%; height:100%; object-fit:cover; }
+
+    .buy { padding-top:22px; }
+    .pill { display:inline-block; font-family:var(--font-title); font-size:11px; font-weight:600; letter-spacing:0.04em;
+      padding:5px 13px; border:1.5px solid var(--dark); border-radius:var(--radius-lg); }
+    .buy-rating { display:flex; align-items:center; gap:8px; font-family:var(--font-title); font-size:12.5px; color:var(--gray); margin:14px 0 8px; }
+    .stars { color:var(--pink-accent); letter-spacing:1px; }
+    .buy h1 { font-family:var(--font-title); font-size:27px; font-weight:800; line-height:1.14; letter-spacing:-0.02em; }
+    .buy h1 em { color:var(--pink-accent); }
+    .buy-desc { font-size:14.5px; line-height:1.6; color:var(--ink-soft); margin:14px 0 18px; }
+
+    /* seletor de quantidade (linhas selecionáveis) */
+    .qty-rows { display:flex; flex-direction:column; gap:10px; margin-bottom:16px; }
+    .qty-row { position:relative; display:flex; align-items:center; gap:12px; padding:14px 16px; border:1.5px solid var(--gray-light);
+      border-radius:var(--radius-md); background:#fff; text-align:left; transition:border-color .15s, background .15s; }
+    .qty-row.selected { border-color:var(--pink-fluor); background:var(--pink-soft); }
+    .qty-radio { width:18px; height:18px; border-radius:50%; border:2px solid #cbbfc5; flex-shrink:0; position:relative; }
+    .qty-row.selected .qty-radio { border-color:var(--pink-fluor); }
+    .qty-row.selected .qty-radio::after { content:""; position:absolute; inset:3px; border-radius:50%; background:var(--pink-fluor); }
+    .qty-info { flex:1; min-width:0; }
+    .qty-name { font-family:var(--font-title); font-size:14px; font-weight:700; }
+    .qty-sub { font-family:var(--font-body); font-size:12px; color:var(--gray); }
+    .qty-valid { display:flex; align-items:center; gap:4px; margin-top:4px; font-family:var(--font-title); font-size:11px; font-weight:700; color:var(--pink-accent); }
+    .qty-valid svg { width:12px; height:12px; stroke:currentColor; stroke-width:1.9; fill:none; flex-shrink:0; }
+    .qty-tag { position:absolute; top:-9px; left:14px; background:var(--pink-fluor); color:#fff; font-family:var(--font-title);
+      font-size:9px; font-weight:800; letter-spacing:0.05em; text-transform:uppercase; padding:3px 8px; border-radius:var(--radius-lg); }
+    .qty-prices { text-align:right; flex-shrink:0; }
+    .qty-now { display:block; font-family:var(--font-title); font-size:16px; font-weight:800; color:var(--pink-fluor); }
+    .qty-old { display:block; font-family:var(--font-title); font-size:11px; color:var(--gray); text-decoration:line-through; }
+
+    /* raspadinha */
+    .scratch-wrap { margin-bottom:16px; }
+    .scratch { position:relative; width:100%; aspect-ratio:5/2; border-radius:var(--radius-md); overflow:hidden;
+      background:linear-gradient(135deg,var(--pink-soft),var(--pink-main)); }
+    .scratch-prize { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:14px; }
+    .scratch-prize .sp-off { font-family:var(--font-title); font-size:30px; font-weight:800; color:var(--pink-fluor); line-height:1; }
+    .scratch-prize .sp-txt { font-family:var(--font-title); font-size:12px; font-weight:600; color:var(--dark); margin-top:6px; }
+    .scratch-prize .sp-code { margin-top:8px; font-family:var(--font-title); font-size:11px; font-weight:800; letter-spacing:0.12em;
+      color:var(--dark); border:1.5px dashed var(--pink-accent); border-radius:8px; padding:5px 12px; }
+    .scratch canvas { position:absolute; inset:0; width:100%; height:100%; touch-action:none; cursor:grab; }
+    .scratch-hint { display:flex; align-items:center; justify-content:center; gap:7px; font-family:var(--font-title);
+      font-size:11px; font-weight:700; letter-spacing:0.04em; color:var(--gray); margin-top:8px; }
+    .scratch-hint svg { width:14px; height:14px; stroke:var(--gray); fill:none; }
+
+    /* desbloqueio de brindes */
+    .unlock { margin-bottom:18px; }
+    .unlock-head { text-align:center; margin-bottom:12px; }
+    .unlock-head b { display:block; font-family:var(--font-title); font-size:16px; font-weight:800; }
+    .unlock-head span { font-family:var(--font-body); font-size:12.5px; color:var(--gray); }
+    .unlock-row { display:flex; align-items:center; gap:12px; padding:13px 15px; border:1.5px solid var(--gray-light);
+      border-radius:var(--radius-md); margin-bottom:9px; transition:border-color .15s, background .15s; }
+    .unlock-row.on { border-color:var(--pink-accent); background:var(--pink-soft); }
+    .unlock-ic { width:24px; height:24px; flex-shrink:0; stroke:var(--gray); fill:none; }
+    .unlock-row.on .unlock-ic { stroke:var(--pink-accent); }
+    .unlock-txt { flex:1; font-family:var(--font-title); font-size:13px; font-weight:600; }
+    .unlock-state { font-family:var(--font-title); font-size:11px; font-weight:700; color:var(--gray); }
+    .unlock-row.on .unlock-state { color:var(--pink-accent); }
+    .unlock-price { font-family:var(--font-title); font-size:11px; font-weight:700; }
+    .unlock-price s { color:var(--gray); }
+
+    /* barra de progresso — desbloqueie frete grátis */
+    .freebar { border:1.5px solid var(--gray-light); border-radius:var(--radius-md); padding:13px 15px; margin-bottom:16px; }
+    .freebar.on { border-color:var(--pink-accent); background:var(--pink-soft); }
+    .freebar-head { display:flex; align-items:center; gap:9px; margin-bottom:10px; }
+    .freebar-ic { width:22px; height:22px; flex-shrink:0; stroke:var(--gray); fill:none; }
+    .freebar.on .freebar-ic { stroke:var(--pink-accent); }
+    .freebar-head b { font-family:var(--font-title); font-size:13.5px; font-weight:800; color:var(--dark); }
+    .freebar.on .freebar-head b { color:var(--pink-accent); }
+    .freebar-track { height:8px; background:var(--gray-light); border-radius:var(--radius-lg); overflow:hidden; }
+    .freebar-fill { height:100%; width:0; background:var(--pink-fluor); border-radius:var(--radius-lg); transition:width .35s ease; }
+    .add-cart { margin-bottom:14px; }
+    .add-note { display:flex; align-items:center; justify-content:center; gap:8px; font-family:var(--font-title);
+      font-size:12px; color:var(--ink-soft); margin-bottom:18px; }
+    .add-note .dotgreen { width:8px; height:8px; border-radius:50%; background:#1A8A3C; flex-shrink:0; }
+
+    /* accordions buy box */
+    .acc { border-top:1px solid var(--gray-light); }
+    .acc:last-of-type { border-bottom:1px solid var(--gray-light); }
+    .acc summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:10px; padding:15px 0;
+      font-family:var(--font-title); font-size:14.5px; font-weight:700; }
+    .acc summary::-webkit-details-marker { display:none; }
+    .acc .chev { margin-left:auto; color:var(--pink-fluor); font-size:20px; font-weight:300; transition:transform .2s; }
+    .acc[open] .chev { transform:rotate(45deg); }
+    .acc-body { padding:0 0 16px; }
+    .check-list { list-style:none; }
+    .check-list li { display:flex; gap:10px; align-items:flex-start; font-size:14px; line-height:1.45; color:var(--dark); margin-bottom:10px; }
+    .check-list svg { width:19px; height:19px; stroke:#1A8A3C; fill:none; flex-shrink:0; margin-top:1px; }
+    .ingr-list { font-size:14px; line-height:1.6; color:var(--ink-soft); }
+    .ingr-list b { color:var(--dark); }
+
+    .seals-strip { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:16px 22px; padding:22px 0 4px; }
+    .seals-strip img { height:46px; width:auto; }
+
+    /* ─── STICKY BUY BAR ─────────────────────────────── */
+    .stickybar { position:fixed; left:0; right:0; bottom:0; z-index:70; transform:translateY(120%); transition:transform .3s ease;
+      background:rgba(255,255,255,0.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+      border-top:1px solid var(--gray-light); padding:10px var(--content-pad); }
+    .stickybar.show { transform:translateY(0); }
+    .stickybar-in { max-width:var(--max-w); margin:0 auto; display:flex; align-items:center; gap:12px; }
+    .stickybar img { width:42px; height:42px; border-radius:10px; object-fit:cover; flex-shrink:0; }
+    .stickybar-price { flex:1; min-width:0; font-family:var(--font-title); }
+    .stickybar-price .now { font-size:16px; font-weight:800; color:var(--pink-fluor); }
+    .stickybar-price .old { font-size:11px; color:var(--gray); text-decoration:line-through; margin-left:6px; }
+    .stickybar .btn { padding:12px 22px; width:auto; flex-shrink:0; }
+
+    /* ─── SEÇÕES DE CONTEÚDO ─────────────────────────── */
+    .sec { padding:52px var(--content-pad); }
+    .sec.soft { background:var(--bg-soft); }
+    .eyebrow { font-family:var(--font-title); font-size:11px; font-weight:700; letter-spacing:0.14em;
+      text-transform:uppercase; color:var(--pink-accent); margin-bottom:10px; }
+    .h2 { font-family:var(--font-title); font-size:30px; font-weight:800; line-height:1.12; letter-spacing:-0.025em; }
+    .h2 em { color:var(--pink-accent); }
+    .sec p.body { font-size:15px; line-height:1.65; color:var(--ink-soft); margin-top:14px; }
+    .sec-actions { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:14px; margin-top:24px; }
+
+    .feature-media { margin-top:28px; border-radius:var(--radius-xl); overflow:hidden; aspect-ratio:1/1; background:var(--pink-light); }
+    .feature-media img { width:100%; height:100%; object-fit:cover; }
+    .mini-thumbs { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px; }
+    .mini-thumbs .ph, .mini-thumbs img { aspect-ratio:1/1; border-radius:var(--radius-md); }
+    .mini-thumbs img { width:100%; height:auto; object-fit:cover; display:block; }
+    /* retrato alto: mantém box 1/1 e desloca o enquadramento p/ o rosto (sem esticar a coluna) */
+    .split.rev .feature-media img { object-position:center 28%; }
+
+    /* banda full-bleed com texto sobreposto */
+    .band { position:relative; min-height:340px; display:flex; align-items:flex-end; padding:28px var(--content-pad) 32px;
+      color:#fff; overflow:hidden; }
+    .band .ph { position:absolute; inset:0; border-radius:0; }
+    .band-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 30%; z-index:0; }
+    .band::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,0.10) 30%,rgba(0,0,0,0.55) 100%); z-index:1; }
+    .band-in { position:relative; z-index:2; max-width:330px; }
+    .band-in h2 { font-family:var(--font-title); font-size:25px; font-weight:800; line-height:1.18; text-shadow:0 2px 18px rgba(0,0,0,0.5); }
+    .band-in .btn { margin-top:18px; }
+
+    /* tecnologia — eyebrow centrado estilo zencial */
+    .tech-intro { text-align:center; padding:56px var(--content-pad) 20px; background:var(--bg-soft); }
+    .tech-intro .eyebrow { color:var(--gray); }
+    .tech-intro h2 { font-family:var(--font-title); font-size:30px; font-weight:700; letter-spacing:-0.02em; }
+    .tech-intro .rule { width:46px; height:3px; background:var(--pink-accent); border-radius:2px; margin:14px auto 14px; }
+    .tech-intro .sub { font-family:var(--font-title); font-size:20px; font-weight:400; color:var(--gray); }
+    .tech-bubbles { background:var(--bg-soft); padding:0 var(--content-pad) 8px; }
+    .tech-bubbles .ph { aspect-ratio:4/5; max-width:280px; width:100%; margin:0 auto; border-radius:var(--radius-md); }
+    /* mobile: imagem (já é 4:5, com os 3 tubos) no ratio natural — mostra tudo, sem corte */
+    .tech-bubbles img { display:block; width:100%; max-width:280px; height:auto; margin:0 auto; border-radius:var(--radius-md); }
+
+    .tech-accs { background:var(--bg-soft); padding:20px var(--content-pad) 56px; }
+    .tech-accs .h2 { margin-bottom:6px; }
+    .tech-accs .link { display:inline-flex; align-items:center; gap:7px; font-family:var(--font-title); font-size:13px;
+      font-weight:700; color:var(--pink-accent); margin:6px 0 22px; }
+    .tech-accs .link svg { width:15px; height:15px; stroke:currentColor; fill:none; }
+    .tech-note { font-size:11px; color:var(--gray); margin-top:20px; }
+
+    /* tech-stat section (clean / claro) */
+    .dark-sec { position:relative; background:linear-gradient(180deg,#fff 0%, var(--pink-light) 100%); color:var(--dark); padding:60px var(--content-pad); overflow:hidden; }
+    .dark-sec .bubbles-bg { display:none; }
+    .dark-card { position:relative; z-index:2; background:#fff; color:var(--dark); border:1px solid var(--gray-light); border-radius:var(--radius-xl);
+      padding:26px 22px; box-shadow:0 18px 50px rgba(225,108,145,0.10); }
+    .dark-card .eyebrow { color:var(--pink-accent); }
+    .dark-card h2 { font-family:var(--font-title); font-size:24px; font-weight:700; line-height:1.2; letter-spacing:-0.02em; }
+    .stat-chip { display:flex; align-items:center; gap:14px; border:1.5px solid var(--gray-light); border-radius:var(--radius-md);
+      padding:14px 16px; margin:20px 0 16px; }
+    .stat-chip .chip-tag { font-family:var(--font-title); font-size:12px; font-weight:600; line-height:1.3; flex:1; }
+    .stat-chip .chip-tag .pill { font-size:9.5px; padding:3px 9px; margin-bottom:6px; }
+    .stat-chip .chip-num { display:flex; align-items:center; gap:6px; font-family:var(--font-title); font-size:26px; font-weight:800; color:var(--pink-fluor); }
+    .stat-chip .chip-num svg { width:16px; height:16px; stroke:var(--pink-fluor); fill:none; }
+    .stat-foot { font-family:var(--font-title); font-size:11px; color:var(--gray); }
+    .dark-cols { position:relative; z-index:2; display:grid; gap:20px; margin-top:24px; }
+    .dark-col h4 { font-family:var(--font-title); font-size:11px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--pink-accent); margin-bottom:8px; }
+    .dark-col p { font-size:13.5px; line-height:1.55; color:var(--ink-soft); }
+
+    /* timeline */
+    .timeline-sec { padding:52px var(--content-pad); }
+    .timeline { margin-top:26px; position:relative; padding-left:6px; }
+    .tl-item { position:relative; padding-left:26px; padding-bottom:26px; border-left:2px solid var(--pink-main); }
+    .tl-item:last-child { border-left-color:transparent; padding-bottom:0; }
+    .tl-item::before { content:""; position:absolute; left:-7px; top:2px; width:12px; height:12px; border-radius:50%; background:var(--pink-fluor); }
+    .tl-phase { display:inline-block; font-family:var(--font-title); font-size:11px; font-weight:700; color:var(--pink-accent);
+      background:var(--pink-soft); padding:3px 11px; border-radius:var(--radius-lg); }
+    .tl-title { font-family:var(--font-title); font-size:16px; font-weight:700; margin:8px 0 8px; }
+    .tl-item ul { list-style:none; }
+    .tl-item li { position:relative; padding-left:16px; font-size:13.5px; line-height:1.5; color:var(--ink-soft); margin-bottom:4px; }
+    .tl-item li::before { content:""; position:absolute; left:0; top:8px; width:5px; height:5px; border-radius:50%; background:var(--pink-mid); }
+    .timeline-imgs { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:26px; }
+    .timeline-imgs .ph, .timeline-imgs img { aspect-ratio:1/1; width:100%; height:100%; object-fit:cover; border-radius:var(--radius-md); }
+    .timeline-imgs .span2 { grid-column:1 / -1; aspect-ratio:16/9; }
+
+    /* comparativo */
+    .compare-band { position:relative; padding:52px var(--content-pad); background:var(--pink-light); color:var(--dark); overflow:hidden; }
+    .compare-band h2 { color:var(--dark); }
+    .ctable { margin-top:24px; border-radius:var(--radius-md); overflow:hidden; background:#fff; border:1px solid var(--gray-light); box-shadow:0 14px 40px rgba(225,108,145,0.10); }
+    .ctable-row { display:grid; grid-template-columns:1.5fr 0.7fr 0.9fr; align-items:center; border-bottom:1px solid var(--gray-light); }
+    .ctable-row:last-child { border-bottom:none; }
+    .ctable-row > div { padding:13px 12px; font-family:var(--font-title); font-size:12px; line-height:1.3; }
+    .ctable-attr { color:var(--dark); font-weight:600; }
+    .ctable-us { text-align:center; background:var(--pink-soft); color:var(--pink-accent); font-weight:800; }
+    .ctable-them { text-align:center; color:var(--gray); }
+    .ctable-head > div { font-size:10.5px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; }
+    .ctable-head .ctable-attr { color:transparent; }
+    .ctable-head .ctable-us { color:var(--pink-fluor); } .ctable-head .ctable-them { color:var(--gray); }
+    .ck { color:#1A8A3C; font-size:15px; }
+
+    /* kits — cuidados essenciais */
+    .kits-sec { padding:52px var(--content-pad); }
+    .kits-sec .head-row { display:flex; flex-direction:column; gap:6px; margin-bottom:8px; }
+    .kit-scroll { display:flex; gap:14px; overflow-x:auto; scrollbar-width:none; padding:26px 0 8px; scroll-snap-type:x mandatory; }
+    .kit-scroll::-webkit-scrollbar { display:none; }
+    .kit-card { position:relative; flex:0 0 78%; scroll-snap-align:center; display:flex; flex-direction:column;
+      background:#fff; border:1.5px solid var(--gray-light); border-radius:var(--radius-md); padding:16px 16px 18px; text-align:center; }
+    .kit-card.featured { border:2px solid var(--pink-fluor); box-shadow:0 14px 36px rgba(245,10,120,0.16); }
+    .kit-badges { display:flex; flex-wrap:wrap; gap:5px; justify-content:center; margin-bottom:12px; }
+    .kit-badge { font-family:var(--font-title); font-size:9px; font-weight:800; letter-spacing:0.04em; text-transform:uppercase; padding:4px 9px; border-radius:var(--radius-lg); }
+    .kit-badge.new { background:var(--dark); color:#fff; }
+    .kit-badge.off { background:var(--pink-fluor); color:#fff; }
+    .kit-badge.ship { background:var(--pink-soft); color:var(--pink-accent); }
+    .kit-badge.best { background:var(--pink-accent); color:#fff; }
+    .kit-media { width:100%; aspect-ratio:4/5; border-radius:var(--radius-sm); overflow:hidden; margin-bottom:12px; background:var(--pink-light); }
+    .kit-media img { width:100%; height:100%; object-fit:cover; }
+    .kit-qty { font-family:var(--font-title); font-size:15px; font-weight:700; }
+    .kit-old { font-family:var(--font-title); font-size:12px; color:var(--gray); margin:6px 0 2px; }
+    .kit-old s { color:var(--gray); }
+    .kit-now { font-family:var(--font-title); font-size:22px; font-weight:800; color:var(--pink-fluor); line-height:1.1; }
+    .kit-parc { font-family:var(--font-title); font-size:11.5px; color:var(--ink-soft); margin:4px 0 14px; }
+    .kit-card .btn { margin-top:auto; }
+    /* selo de validade (kits de maior quantidade) — sutil mas legível */
+    .kit-valid { align-self:center; display:inline-flex; align-items:center; gap:6px;
+      font-family:var(--font-title); font-size:11.5px; font-weight:700; letter-spacing:0.01em;
+      color:var(--pink-accent); background:var(--pink-soft); padding:5px 11px; border-radius:var(--radius-lg);
+      margin:0 0 12px; }
+    .kit-valid svg { width:13px; height:13px; stroke:currentColor; stroke-width:1.8; fill:none; flex-shrink:0; }
+    .kit-gift { display:flex; align-items:flex-start; gap:8px; font-family:var(--font-title); font-size:11px; color:var(--ink-soft); margin-top:18px; }
+    .kit-gift svg { width:16px; height:16px; stroke:var(--pink-accent); fill:none; flex-shrink:0; }
+
+    /* combo */
+    .protocol-cards { display:flex; flex-direction:column; gap:16px; margin-top:26px; }
+    .protocol-card { background:var(--bg-soft); border-radius:var(--radius-xl); padding:20px; display:flex; flex-direction:column; gap:14px; }
+    .protocol-card .pc-media { aspect-ratio:1/1; border-radius:var(--radius-md); overflow:hidden; background:var(--pink-light); }
+    .protocol-card .pc-media img { width:100%; height:100%; object-fit:cover; }
+    .protocol-card h3 { font-family:var(--font-title); font-size:20px; font-weight:800; }
+    .protocol-card .pc-desc { font-size:13.5px; line-height:1.5; color:var(--ink-soft); }
+    .pc-list { list-style:none; margin-top:4px; }
+    .pc-list li { display:flex; gap:10px; align-items:flex-start; font-size:13.5px; line-height:1.45; margin-bottom:9px; }
+    .pc-list b { font-family:var(--font-title); font-size:13px; }
+    .pc-list svg { width:18px; height:18px; stroke:var(--pink-accent); fill:none; flex-shrink:0; margin-top:1px; }
+
+    /* FAQ */
+    .faq-sec { padding:52px var(--content-pad); }
+    .faq-item { border-bottom:1px solid var(--gray-light); }
+    .faq-q { width:100%; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0;
+      text-align:left; font-family:var(--font-title); font-size:15px; font-weight:600; }
+    .faq-q .ic { flex-shrink:0; width:18px; height:18px; position:relative; }
+    .faq-q .ic::before,.faq-q .ic::after { content:""; position:absolute; background:var(--pink-fluor); border-radius:2px; }
+    .faq-q .ic::before { top:8px; left:1px; right:1px; height:2px; }
+    .faq-q .ic::after { left:8px; top:1px; bottom:1px; width:2px; transition:transform .2s; }
+    .faq-item.open .faq-q .ic::after { transform:scaleY(0); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height .25s ease; }
+    .faq-a p { font-size:14px; line-height:1.6; color:var(--ink-soft); padding:0 0 18px; }
+    .faq-item.open .faq-a { max-height:320px; }
+
+    /* cross-sell protocolo grande */
+    .xsell { padding:52px var(--content-pad); background:var(--bg-soft); }
+    .xsell .eyebrow { color:var(--gray); }
+    .xsell .x-media { aspect-ratio:4/3; border-radius:var(--radius-xl); overflow:hidden; margin-top:22px; background:var(--pink-light); }
+    .xsell .x-media .ph { width:100%; height:100%; border-radius:0; }
+    .xsell .x-media a { display:block; width:100%; height:100%; }
+    .xsell .x-media img { width:100%; height:100%; object-fit:cover; display:block; }
+    .xsell h3 { font-family:var(--font-title); font-size:19px; font-weight:800; margin:22px 0 8px; }
+    .xsell .x-desc { font-size:14px; line-height:1.55; color:var(--ink-soft); margin-bottom:16px; }
+    /* mobile: botão do cross-sell centralizado */
+    .xsell-block .btn { display:flex; width:fit-content; max-width:100%; margin-left:auto; margin-right:auto; }
+    .xsell-tabs { margin-top:22px; border-top:1px solid var(--gray-light); }
+    .xsell-tab { padding:15px 0; border-bottom:1px solid var(--gray-light); font-family:var(--font-title); font-size:18px; font-weight:700; }
+    .xsell-tab.muted { color:var(--gray); }
+
+    /* footer */
+    .footer { background:#fff; border-top:1px solid var(--gray-light); padding:48px var(--content-pad) 28px; }
+    .footer-top { display:flex; flex-direction:column; gap:18px; }
+    .footer-mission h3 { font-family:var(--font-title); font-size:20px; font-weight:800; }
+    .footer-mission p { font-size:13.5px; line-height:1.55; color:var(--ink-soft); margin-top:8px; }
+    .news-form { display:flex; gap:8px; margin-top:14px; }
+    .news-form input { flex:1; min-width:0; border:1.5px solid var(--gray-light); border-radius:var(--radius-lg); padding:12px 16px; font-family:var(--font-body); font-size:14px; }
+    .news-form button { background:var(--dark); color:#fff; font-family:var(--font-title); font-size:13px; font-weight:700; padding:12px 20px; border-radius:var(--radius-lg); }
+    .footer-cols { display:grid; grid-template-columns:1fr 1fr; gap:24px 16px; margin:34px 0; }
+    .footer-col h5 { font-family:var(--font-title); font-size:11px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--gray); margin-bottom:12px; }
+    .footer-col a { display:block; font-size:13.5px; color:var(--dark); margin-bottom:9px; }
+    .footer-trust { display:grid; grid-template-columns:1fr; gap:14px; margin-bottom:30px; }
+    .trust-card { border:1.5px solid var(--gray-light); border-radius:var(--radius-md); padding:16px; }
+    .trust-card .ra { font-family:var(--font-title); font-weight:800; color:#1A8A3C; font-size:13px; }
+    .trust-card .score { font-family:var(--font-title); font-size:28px; font-weight:800; }
+    .trust-card .score small { font-size:13px; color:var(--gray); }
+    .trust-card p { font-size:11.5px; color:var(--ink-soft); margin-top:6px; line-height:1.4; }
+    .trust-card.wpp { background:var(--dark); color:#fff; display:flex; flex-direction:column; gap:6px; }
+    .trust-card.wpp b { font-family:var(--font-title); font-size:15px; }
+    .trust-card.wpp span { font-size:12.5px; color:rgba(255,255,255,0.7); }
+    .trust-card.wpp .btn { margin-top:8px; align-self:flex-start; }
+    .footer-logo img { height:26px; width:auto; margin-bottom:14px; filter:brightness(0); opacity:0.85; }
+    .footer-bottom { display:flex; flex-direction:column; gap:14px; border-top:1px solid var(--gray-light); padding-top:20px; }
+    .footer-copy { font-size:11.5px; color:var(--gray); line-height:1.5; }
+    .footer-social { display:flex; gap:12px; }
+    .footer-social a { width:36px; height:36px; border-radius:50%; background:var(--pink-soft); display:flex; align-items:center; justify-content:center; }
+    .footer-social svg { width:17px; height:17px; stroke:var(--dark); fill:none; }
+
+    /* ═══ DESKTOP (≥ 980px) ═══════════════════════════ */
+    @media (min-width:980px) {
+      :root { --content-pad:max(40px,calc((100vw - 1160px)/2)); }
+      html { background:var(--bg-soft); }
+      body { max-width:none; background:#fff; }
+
+      .nav { padding:18px var(--content-pad); }
+      .nav-logo img { height:26px; }
+      .nav-links { display:flex; gap:28px; font-family:var(--font-title); font-size:14px; font-weight:500; }
+      .nav-links a:hover { color:var(--pink-accent); }
+
+      /* HERO 2 colunas: galeria | buy box */
+      .pdp { display:grid; grid-template-columns:1.05fr 0.95fr; gap:48px; align-items:start; padding:36px var(--content-pad) 64px; }
+      .pdp-gallery { position:sticky; top:96px; }
+      .gallery-thumbs { grid-template-columns:repeat(4,1fr); }
+      .buy { padding-top:4px; }
+      .buy h1 { font-size:34px; }
+
+      .stickybar { display:none; } /* no desktop não precisa da barra fixa */
+
+      /* seções: fundo full-bleed, conteúdo centralizado */
+      .sec, .tech-intro, .tech-bubbles, .tech-accs, .timeline-sec, .compare-band, .kits-sec, .faq-sec, .xsell, .footer { padding-left:var(--content-pad); padding-right:var(--content-pad); }
+      .sec, .timeline-sec, .kits-sec, .faq-sec { padding-top:80px; padding-bottom:80px; }
+      .h2 { font-size:38px; }
+
+      /* desktop: botões de seção voltam a alinhar à esquerda (mobile fica centralizado) */
+      .sec-actions { justify-content:flex-start; }
+
+      /* seções feature em 2 colunas (texto | mídia), alternando */
+      .sec.split { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+      .sec.split .feature-media { margin-top:0; }
+      .sec.split.rev > .split-text { order:2; }
+      /* Niacinamida: mídia = retrato + thumbs (mais alta), texto alinha ao topo */
+      .sec.split.rev { align-items:start; }
+      .sec.split.rev .split-text { align-self:center; }
+      .sec.split.rev .split-media { display:flex; flex-direction:column; }
+      .sec.split.rev .feature-media { aspect-ratio:4/5; }
+      .sec.split.rev .mini-thumbs { margin-top:10px; }
+
+      .tech-intro h2 { font-size:40px; }
+      .tech-block { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; max-width:1160px; margin:0 auto; padding:20px var(--content-pad) 70px; background:var(--bg-soft); }
+      .tech-block .tech-bubbles, .tech-block .tech-accs { padding:0; background:none; }
+      .tech-bubbles .ph, .tech-bubbles img { max-width:none; aspect-ratio:4/5; }
+      .tech-bubbles img { object-fit:cover; }
+
+      .dark-sec { padding:88px var(--content-pad); }
+      .dark-inner { display:grid; grid-template-columns:1fr; max-width:1160px; margin:0 auto; }
+      .dark-card { display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center; padding:40px; }
+      .dark-card .dark-card-left { }
+      .dark-cols { margin-top:0; grid-template-columns:1fr 1fr; gap:28px; }
+      .dark-card .dark-card-right { color:var(--dark); }
+      .dark-card .dark-col h4 { color:var(--pink-accent); }
+      .dark-card .dark-col p { color:var(--ink-soft); }
+
+      .timeline-block { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; max-width:1160px; margin:0 auto; }
+      .timeline-imgs { margin-top:0; }
+
+      .compare-band { padding:80px var(--content-pad); }
+      .ctable { max-width:920px; margin-left:auto; margin-right:auto; }
+      .compare-inner { max-width:1160px; margin:0 auto; }
+
+      .kit-scroll { display:grid; grid-template-columns:repeat(4,1fr); overflow:visible; gap:14px; }
+      .kit-card { flex:none; }
+
+      .protocol-cards { display:grid; grid-template-columns:1fr; gap:22px; max-width:760px; margin-left:auto; margin-right:auto; }
+      .protocol-card { flex-direction:row; align-items:center; }
+      .protocol-card .pc-media { flex:0 0 42%; }
+
+      .faq-block { display:grid; grid-template-columns:0.8fr 1.2fr; gap:56px; align-items:start; max-width:1160px; margin:0 auto; }
+      .faq-list { margin-top:0; }
+
+      .xsell-block { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; max-width:1160px; margin:0 auto; }
+      .xsell .x-media { margin-top:0; }
+      .xsell-block .btn { margin-left:0; }
+
+      .footer-top { display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:32px; }
+      .footer-cols { display:contents; }
+      .footer-trust { grid-template-columns:1fr 1fr; max-width:1160px; }
+      .footer-bottom { flex-direction:row; align-items:center; justify-content:space-between; }
+      .band-in { max-width:420px; }
+      .band-in h2 { font-size:30px; }
+      .mini-thumbs .ph, .mini-thumbs img { aspect-ratio:1/1; }
+    }
+
+    /* impressão/PDF: esconde a barra fixa de compra (senão repete em toda página) */
+    @media print { #stickybar { display:none !important; } }
+  </style>
+</head>
+<body>
+
+  <!-- ░░ NAV ░░ -->
+  <nav class="nav" aria-label="Navegação principal">
+    <div class="nav-logo" aria-label="Hidrabene"><img src="./assets/brand/logo-hidrabene-nav.webp" alt="Hidrabene" width="150" height="22" /></div>
+    <div class="nav-links" aria-hidden="true"><a href="#beneficios">Benefícios</a><a href="#tecnologia">Tecnologia</a><a href="#oferta">Kits</a></div>
+    <button class="nav-cta" onclick="irOferta()">Comprar agora</button>
+  </nav>
+
+  <!-- ░░ HERO / PDP ░░ -->
+  <header class="pdp" aria-label="Protetor Solar Facial FPS 70 Clareador">
+    <section class="pdp-gallery" aria-label="Fotos do produto">
+      <div class="gallery-main">
+        <img id="galleryMain" src="./assets/images/hero-card1.webp" alt="Protetor Solar Facial FPS 70 Clareador — antes e depois" width="1228" height="1400" fetchpriority="high" loading="eager" />
+      </div>
+      <div class="gallery-thumbs" role="group" aria-label="Miniaturas">
+        <button class="gallery-thumb active" onclick="setGallery(this,'./assets/images/hero-card1.webp')"><img src="./assets/images/hero-card1.webp" alt="Antes e depois" width="200" height="200" loading="lazy" /></button>
+        <button class="gallery-thumb" onclick="setGallery(this,'./assets/images/g-produto.webp')"><img src="./assets/images/g-produto.webp" alt="Produto sobre pedestal rosa" width="200" height="200" loading="lazy" /></button>
+        <button class="gallery-thumb" onclick="setGallery(this,'./assets/images/g-aplicando.webp')"><img src="./assets/images/g-aplicando.webp" alt="Aplicação no rosto" width="200" height="200" loading="lazy" /></button>
+        <button class="gallery-thumb" onclick="setGallery(this,'./assets/images/g-textura.webp')"><img src="./assets/images/g-textura.webp" alt="Textura da loção" width="200" height="200" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <section class="buy" id="oferta" aria-label="Comprar">
+      <span class="pill">FPS 70 Clareador</span>
+      <p class="buy-rating"><span class="stars" aria-label="4.5 de 5">★★★★★</span> 4.5/5 · avaliações verificadas</p>
+      <h1>Protetor Solar Facial FPS&nbsp;70 com Niacinamida&nbsp;5% e <em>ação clareadora</em></h1>
+      <p class="buy-desc">FPS 70 amplo espectro com Niacinamida 5% que clareia, uniformiza o tom e controla o brilho. Incolor e de toque seco — proteção e skincare num passo só, para todo tom de pele.</p>
+
+      <!-- seletor de quantidade -->
+      <div class="qty-rows" role="group" aria-label="Escolha a quantidade">
+        <button class="qty-row selected" data-kit="1-unidade" data-now="R$ 34,90" data-old="R$ 49,90" onclick="selQty(this)">
+          <span class="qty-radio" aria-hidden="true"></span>
+          <span class="qty-info"><span class="qty-name">1 Unidade</span><span class="qty-sub">Tratamento de 1 mês</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 34,90</span><span class="qty-old">R$ 49,90</span></span>
+        </button>
+        <button class="qty-row" data-kit="3-unidades" data-now="R$ 74,90" data-old="R$ 149,90" onclick="selQty(this)">
+          <span class="qty-tag">Mais vendido</span>
+          <span class="qty-radio" aria-hidden="true"></span>
+          <span class="qty-info"><span class="qty-name">3 Unidades</span><span class="qty-sub">R$ 24,96/un · 3 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 74,90</span><span class="qty-old">R$ 149,90</span></span>
+        </button>
+        <button class="qty-row" data-kit="6-unidades" data-now="R$ 134,90" data-old="R$ 299,90" onclick="selQty(this)">
+          <span class="qty-radio" aria-hidden="true"></span>
+          <span class="qty-info"><span class="qty-name">6 Unidades</span><span class="qty-sub">R$ 22,48/un · 6 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 134,90</span><span class="qty-old">R$ 299,90</span></span>
+        </button>
+        <button class="qty-row" data-kit="10-unidades" data-now="R$ 214,90" data-old="R$ 499,90" onclick="selQty(this)">
+          <span class="qty-tag">Melhor oferta</span>
+          <span class="qty-radio" aria-hidden="true"></span>
+          <span class="qty-info"><span class="qty-name">10 Unidades</span><span class="qty-sub">R$ 21,49/un · 10 meses</span><span class="qty-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</span></span>
+          <span class="qty-prices"><span class="qty-now">R$ 214,90</span><span class="qty-old">R$ 499,90</span></span>
+        </button>
+      </div>
+
+      <!-- barra de progresso — desbloqueie frete grátis -->
+      <div class="freebar">
+        <div class="freebar-head"><svg class="freebar-ic" viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="14" height="10" rx="1.5"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="18" r="1.7"/><circle cx="18.5" cy="18" r="1.7"/></svg><b id="freeMsg">Desbloqueie frete grátis</b></div>
+        <div class="freebar-track" aria-hidden="true"><div class="freebar-fill" id="freeFill"></div></div>
+      </div>
+
+
+      <button class="btn btn-fluor add-cart" onclick="comprarSelecionado()">Comprar Agora</button>
+      <p class="add-note"><span class="dotgreen"></span> Oferta de lançamento · estoque limitado · garantia de 7 dias</p>
+
+      <details class="acc" id="beneficios" open>
+        <summary>Benefícios <span class="chev">+</span></summary>
+        <div class="acc-body">
+          <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Some de verdade na pele, sem rastro branco — inclusive na pele negra</li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Niacinamida 5% que clareia e uniformiza o tom no uso contínuo</li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Toque seco matte que segura a oleosidade o dia todo</li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> FPS 70 amplo espectro · dermatologicamente testado</li>
+          </ul>
+        </div>
+      </details>
+      <details class="acc">
+        <summary>Ingredientes <span class="chev">+</span></summary>
+        <div class="acc-body">
+          <p class="ingr-list"><b>Niacinamida 5%</b>, <b>Vitamina E</b>, <b>Aloe Vera</b>, <b>Argila</b> e tecnologia de toque seco <b>Dry Flo®</b>. Loção incolor, oil free e não comedogênica. Filtros de amplo espectro (UVA, UVB, luz visível e azul).</p>
+        </div>
+      </details>
+
+      <div class="seals-strip" role="list" aria-label="Certificações da marca">
+        <img src="./assets/brand/selo-cruelty-free-vegan.webp" alt="Cruelty free e vegano" loading="lazy" />
+        <img src="./assets/brand/selo-derm-testado.webp" alt="Dermatologicamente testado" loading="lazy" />
+        <img src="./assets/brand/selo-im-green.webp" alt="I'm green" loading="lazy" />
+        <img src="./assets/brand/selo-industria-brasileira.webp" alt="Indústria brasileira" loading="lazy" />
+      </div>
+    </section>
+  </header>
+
+  <!-- ░░ STICKY BUY BAR ░░ -->
+  <div class="stickybar" id="stickybar" aria-hidden="true">
+    <div class="stickybar-in">
+      <img src="./assets/images/mini-produto.webp" alt="Protetor FPS 70 Clareador" width="42" height="42" loading="lazy" />
+      <div class="stickybar-price"><span class="now" id="sbNow">R$ 34,90</span><span class="old" id="sbOld">R$ 49,90</span></div>
+      <button class="btn btn-fluor" style="width:auto" onclick="irOferta()">Comprar</button>
+    </div>
+  </div>
+
+  <!-- ░░ SEÇÃO — PROMESSA ░░ -->
+  <section class="sec soft split">
+    <div class="split-text">
+      <p class="eyebrow">Proteção e skincare num passo só</p>
+      <h2 class="h2">Sua pele <em>protegida</em>, uniforme e iluminada.</h2>
+      <p class="body">A fórmula une FPS 70 amplo espectro e Niacinamida 5%: bloqueia o que escurece e agrava manchas — sol, luz visível e luz azul — enquanto clareia e uniformiza o tom. Tudo numa loção incolor de toque seco.</p>
+      <div class="sec-actions">
+        <button class="btn btn-fluor" style="width:auto" onclick="irOferta()">Comprar agora</button>
+        <button class="btn btn-ghost" onclick="scrollTo2('#tecnologia')">Conhecer a tecnologia <svg class="arr" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="feature-media">
+      <img src="./assets/images/lifestyle-pele.webp" alt="Pele negra radiante e de tom uniforme, sem rastro branco" width="1000" height="546" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- ░░ SEÇÃO — ATIVO PRINCIPAL ░░ -->
+  <section class="sec split rev">
+    <div class="split-text">
+      <span class="pill">Niacinamida 5%</span>
+      <h2 class="h2" style="margin-top:14px;">O ativo que <em>clareia</em> enquanto protege.</h2>
+      <p class="body">A Niacinamida atua na origem das manchas: regula a melanina, uniformiza o tom e fortalece a barreira da pele. Combinada ao FPS 70, você trata e previne no mesmo gesto — sem somar mais um passo na rotina.</p>
+      <div class="sec-actions">
+        <button class="btn btn-dark" onclick="irOferta()">Iniciar tratamento</button>
+      </div>
+    </div>
+    <div class="split-media">
+      <div class="feature-media"><img src="./assets/images/niacinamida-hero.webp" alt="Mulher com pele luminosa e tom uniforme" width="900" height="1613" loading="lazy" /></div>
+      <div class="mini-thumbs">
+        <img src="./assets/images/niacinamida-produto.webp" alt="Loção do Protetor FPS 70 Clareador" width="900" height="1141" loading="lazy" />
+        <img src="./assets/images/niacinamida-aplicacao.webp" alt="Textura da loção na ponta dos dedos" width="1000" height="546" loading="lazy" />
+        <img src="./assets/images/niacinamida-detalhe.webp" alt="Pele com viço e tom uniforme" width="1000" height="546" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ BANDA FULL-BLEED ░░ -->
+  <section class="band" aria-label="Mais proteção, menos manchas">
+    <img class="band-img" src="./assets/images/oferta-2.webp" alt="Mulher aplicando o Protetor Solar Facial FPS 70 Clareador" width="660" height="623" loading="lazy" />
+    <div class="band-in">
+      <h2>Mais proteção, menos manchas — todos os dias.</h2>
+      <button class="btn btn-fluor" style="width:auto" onclick="irOferta()">Comprar agora</button>
+    </div>
+  </section>
+
+  <!-- ░░ TECNOLOGIA — INTRO ░░ -->
+  <section id="tecnologia" class="tech-intro">
+    <p class="eyebrow">Tecnologia FPS 70 Clareador</p>
+    <h2>Resultados progressivos</h2>
+    <div class="rule"></div>
+    <p class="sub">Proteção que também trata</p>
+  </section>
+
+  <div class="tech-block">
+    <div class="tech-bubbles">
+      <img src="./assets/images/tech-produto.webp" alt="Protetor Solar Facial FPS 70 Clareador — tecnologia de toque seco" width="900" height="1124" loading="lazy" />
+    </div>
+    <div class="tech-accs">
+      <h2 class="h2">Uma fórmula pensada para agir em várias frentes da pele.</h2>
+      <a class="link" onclick="irOferta()">Cronograma de uso <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+      <details class="acc" open>
+        <summary>Niacinamida 5% <span class="chev">+</span></summary>
+        <div class="acc-body"><p class="ingr-list">A queridinha do skincare: clareia, uniformiza o tom e fortalece a barreira cutânea. No uso contínuo, ajuda a reduzir a aparência de manchas e a deixar a pele mais homogênea.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Vitamina E <span class="chev">+</span></summary>
+        <div class="acc-body"><p class="ingr-list">Antioxidante que defende a pele dos radicais livres gerados pela exposição solar e ajuda a prevenir sinais e o envelhecimento precoce.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Argila + Dry Flo® <span class="chev">+</span></summary>
+        <div class="acc-body"><p class="ingr-list">O segredo do toque seco: absorvem o excesso de oleosidade e seguram o brilho na hora da aplicação, deixando um acabamento matte de longa duração.</p></div>
+      </details>
+      <p class="tech-note">*Os resultados variam de acordo com a individualidade da pele.</p>
+    </div>
+  </div>
+
+  <!-- ░░ DARK — PROTEÇÃO INTELIGENTE ░░ -->
+  <section class="dark-sec">
+    <div class="dark-inner">
+      <div class="dark-card">
+        <div class="dark-card-left">
+          <p class="eyebrow">Tecnologia FPS 70 Clareador</p>
+          <h2>Proteção de amplo espectro que cuida da pele enquanto defende.</h2>
+          <div class="stat-chip">
+            <div class="chip-tag"><span class="pill">Niacinamida</span>Tom mais uniforme com uso contínuo</div>
+            <div class="chip-num"><svg viewBox="0 0 24 24" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l7-7 7 7"/><path d="M12 5v14"/></svg> 70</div>
+          </div>
+          <p class="stat-foot">Defesa multicamadas: UVA · UVB · luz visível · luz azul</p>
+        </div>
+        <div class="dark-card-right">
+          <div class="dark-cols">
+            <div class="dark-col"><h4>Barreira reforçada</h4><p>Niacinamida e Vitamina E fortalecem a barreira da pele e neutralizam radicais livres do sol.</p></div>
+            <div class="dark-col"><h4>Mancha controlada</h4><p>Ao bloquear luz visível e azul, evita que manchas existentes se agravem ao longo do dia.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TIMELINE ░░ -->
+  <section class="timeline-sec">
+    <div class="timeline-block">
+      <div>
+        <h2 class="h2">Resultados que evoluem a cada fase de uso.</h2>
+        <p class="body">A constância potencializa proteção, uniformização e controle de oleosidade.</p>
+        <a class="link" style="display:inline-flex;align-items:center;gap:7px;color:var(--pink-accent);font-family:var(--font-title);font-weight:700;font-size:13px;margin-top:8px;" onclick="irOferta()">Começar tratamento <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="tl-phase">Primeiros dias</span>
+            <p class="tl-title">Proteção imediata</p>
+            <ul><li>Toque seco e confortável</li><li>Pele sem brilho excessivo</li><li>Acabamento incolor, sem rastro branco</li></ul>
+          </div>
+          <div class="tl-item">
+            <span class="tl-phase">2 semanas</span>
+            <p class="tl-title">Tom mais homogêneo</p>
+            <ul><li>Superfície mais uniforme</li><li>Mais viço visível</li><li>Oleosidade sob controle</li></ul>
+          </div>
+          <div class="tl-item">
+            <span class="tl-phase">4 semanas</span>
+            <p class="tl-title">Manchas menos evidentes</p>
+            <ul><li>Manchas mais clareadas</li><li>Tom emparelhando</li><li>Pele com aspecto mais saudável</li></ul>
+          </div>
+          <div class="tl-item">
+            <span class="tl-phase">8 semanas+</span>
+            <p class="tl-title">Pele uniforme e protegida</p>
+            <ul><li>Luminosidade contínua</li><li>Aparência revitalizada</li><li>Resultados mais consolidados</li></ul>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-imgs">
+        <img class="span2" src="./assets/images/timeline-resultado.webp" alt="Mulher com pele radiante e tom uniforme" width="1000" height="558" loading="lazy" />
+        <img src="./assets/images/timeline-aplicacao.webp" alt="Aplicação da loção no rosto e pescoço" width="1000" height="546" loading="lazy" />
+        <img src="./assets/images/timeline-formula.webp" alt="Ingredientes da fórmula: niacinamida, argila, aloe e vitamina E" width="1000" height="546" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ COMPARATIVO ░░ -->
+  <section class="compare-band">
+    <div class="compare-inner">
+      <h2 class="h2">Por que um FPS clareador entrega <em>mais</em> que um protetor comum.</h2>
+      <div class="ctable" role="table">
+        <div class="ctable-row ctable-head" role="row">
+          <div class="ctable-attr">.</div><div class="ctable-us">FPS 70 Clareador</div><div class="ctable-them">Protetor comum</div>
+        </div>
+        <div class="ctable-row" role="row"><div class="ctable-attr">Clareia e uniformiza o tom</div><div class="ctable-us"><span class="ck">✓</span></div><div class="ctable-them">Não</div></div>
+        <div class="ctable-row" role="row"><div class="ctable-attr">Proteção contra luz visível e azul</div><div class="ctable-us"><span class="ck">✓</span></div><div class="ctable-them">Raro</div></div>
+        <div class="ctable-row" role="row"><div class="ctable-attr">Some na pele, sem rastro branco</div><div class="ctable-us"><span class="ck">✓</span></div><div class="ctable-them">Às vezes</div></div>
+        <div class="ctable-row" role="row"><div class="ctable-attr">Toque seco que segura a oleosidade</div><div class="ctable-us"><span class="ck">✓</span></div><div class="ctable-them">Oleoso</div></div>
+        <div class="ctable-row" role="row"><div class="ctable-attr">Fator de proteção</div><div class="ctable-us"><span class="ck">FPS 70</span></div><div class="ctable-them">FPS 30–50</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ KITS — CUIDADOS ESSENCIAIS ░░ -->
+  <section class="kits-sec">
+    <div class="head-row">
+      <p class="eyebrow">Cuidados essenciais</p>
+      <h2 class="h2">Escolha o seu <em>kit</em> e mantenha a pele protegida.</h2>
+    </div>
+    <div class="kit-scroll" role="list">
+      <!-- 1 un -->
+      <article class="kit-card" role="listitem">
+        <div class="kit-badges"><span class="kit-badge new">Novidade</span><span class="kit-badge off">-30%</span></div>
+        <div class="kit-media"><img src="./assets/images/kit-1.webp" alt="1 unidade" width="600" height="760" loading="lazy" /></div>
+        <p class="kit-qty">1 unidade</p>
+        <p class="kit-old">De <s>R$ 49,90</s></p>
+        <p class="kit-now">R$ 34,90</p>
+        <p class="kit-parc">ou 12x de R$ 3,38</p>
+        <p class="kit-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</p>
+        <button class="btn btn-fluor" onclick="comprarAgora('1-unidade')">Comprar agora</button>
+      </article>
+      <!-- 3 un -->
+      <article class="kit-card" role="listitem">
+        <div class="kit-badges"><span class="kit-badge best">Mais vendido</span><span class="kit-badge off">-50%</span></div>
+        <div class="kit-media"><img src="./assets/images/kit-3.webp" alt="3 unidades" width="600" height="760" loading="lazy" /></div>
+        <p class="kit-qty">3 unidades</p>
+        <p class="kit-old">De <s>R$ 149,90</s></p>
+        <p class="kit-now">R$ 74,90</p>
+        <p class="kit-parc">R$ 24,96/un · 12x de R$ 7,25</p>
+        <p class="kit-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</p>
+        <button class="btn btn-fluor" onclick="comprarAgora('3-unidades')">Comprar agora</button>
+      </article>
+      <!-- 6 un -->
+      <article class="kit-card" role="listitem">
+        <div class="kit-badges"><span class="kit-badge off">-55%</span></div>
+        <div class="kit-media"><img src="./assets/images/kit-6.webp" alt="6 unidades" width="600" height="761" loading="lazy" /></div>
+        <p class="kit-qty">6 unidades</p>
+        <p class="kit-old">De <s>R$ 299,90</s></p>
+        <p class="kit-now">R$ 134,90</p>
+        <p class="kit-parc">R$ 22,48/un · 12x de R$ 13,07</p>
+        <p class="kit-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</p>
+        <button class="btn btn-fluor" onclick="comprarAgora('6-unidades')">Comprar agora</button>
+      </article>
+      <!-- 10 un (destaque) -->
+      <article class="kit-card featured" role="listitem">
+        <div class="kit-badges"><span class="kit-badge best">Melhor oferta</span><span class="kit-badge off">-57%</span><span class="kit-badge ship">Frete grátis</span></div>
+        <div class="kit-media"><img src="./assets/images/kit-10.webp" alt="10 unidades" width="600" height="761" loading="lazy" /></div>
+        <p class="kit-qty">10 unidades</p>
+        <p class="kit-old">De <s>R$ 499,90</s></p>
+        <p class="kit-now">R$ 214,90</p>
+        <p class="kit-parc">R$ 21,49/un · 12x de R$ 20,81</p>
+        <p class="kit-valid"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Validade até 2029</p>
+        <button class="btn btn-fluor" onclick="comprarAgora('10-unidades')">Comprar agora</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- ░░ COMBO ░░ -->
+  <section class="sec">
+    <h2 class="h2">Leve em combo e mantenha a constância do tratamento.</h2>
+    <div class="protocol-cards">
+      <div class="protocol-card">
+        <div class="pc-media"><img src="./assets/images/combo.webp" alt="Combo de unidades do Protetor FPS 70 Clareador" width="900" height="1141" loading="lazy" /></div>
+        <div>
+          <h3>Combo</h3>
+          <p class="pc-desc">Combinações pensadas para começar e manter a evolução da pele com melhor custo-benefício.</p>
+          <ul class="pc-list">
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>1 unidade</b> — ideal para conhecer a fórmula</span></li>
+            <li><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><b>2–3 unidades</b> — para manter a constância sem deixar acabar</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FAQ ░░ -->
+  <section class="faq-sec">
+    <div class="faq-block">
+      <h2 class="h2">Perguntas frequentes sobre o FPS 70 Clareador.</h2>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-q" onclick="toggleFaq(this)">Em quanto tempo a pele começa a responder? <span class="ic"></span></button>
+          <div class="faq-a"><p>A proteção e o toque seco são imediatos. A uniformização do tom e o clareamento de manchas aparecem com o uso contínuo — em geral a partir de 2 a 4 semanas, variando de pele para pele.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Como aplicar corretamente? <span class="ic"></span></button>
+          <div class="faq-a"><p>Na pele limpa e seca, use a regra dos 3 dedos (três listras nos dedos indicador, médio e anelar) e espalhe pelo rosto e pescoço até sumir. Reaplique a cada 2–3 horas de sol.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Para quem este protetor é indicado? <span class="ic"></span></button>
+          <div class="faq-a"><p>Para todo tom de pele, inclusive pele negra (não acinzenta). É oil free e não comedogênico, ideal para quem tem pele oleosa ou mista e quer clarear manchas.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">Posso usar com maquiagem e outros produtos? <span class="ic"></span></button>
+          <div class="faq-a"><p>Pode. Use puro ou como base antes da make — a textura de toque seco facilita a maquiagem por cima. Combina com a sua rotina de skincare normalmente.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">É adequado para peles sensíveis? <span class="ic"></span></button>
+          <div class="faq-a"><p>Sim. É dermatologicamente testado, vegano e cruelty free. Mesmo assim, em peles muito reativas vale fazer um teste prévio na parte interna do braço.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CROSS-SELL PROTOCOLO ░░ -->
+  <section class="xsell">
+    <div class="xsell-block">
+      <div class="x-media"><a href="https://hidrabene.com.br/products/hidrabene-kit-clareador-facial"><img src="./assets/images/protocolo.webp" alt="Kit Clareador Facial Hidrabene — sabonete facial, sérum clareador e protetor solar FPS 70" width="900" height="900" loading="lazy" /></a></div>
+      <div>
+        <p class="eyebrow">Protocolos de tratamento</p>
+        <h2 class="h2">Combinações que <em>potencializam</em> os resultados.</h2>
+        <h3>Tratamento de manchas</h3>
+        <p class="x-desc">Combinação indicada para ajudar a clarear e uniformizar o tom da pele, somando proteção e ativos clareadores na rotina.</p>
+        <button class="btn btn-dark" onclick="window.location.href='https://hidrabene.com.br/products/hidrabene-kit-clareador-facial'">Ver protocolo</button>
+        <div class="xsell-tabs">
+          <div class="xsell-tab">Manchas</div>
+          <div class="xsell-tab muted">Oleosidade</div>
+          <div class="xsell-tab muted">Viço</div>
+          <div class="xsell-tab muted">Hidratação</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-mission">
+        <h3>Beleza de verdade é nutrir o seu bem-estar.</h3>
+        <p>Dermocosméticos desenvolvidos com cuidado, ciência e respeito a todo tipo de pele.</p>
+        <form class="news-form" onsubmit="return false;">
+          <input type="email" placeholder="Seu melhor e-mail" aria-label="E-mail" />
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col"><h5>Produtos</h5><a href="#">Protetor FPS 70</a><a href="#">Body Splash</a><a href="#">Lançamentos</a></div>
+        <div class="footer-col"><h5>Conteúdo</h5><a href="#">Sobre</a><a href="#">Composição</a><a href="#">Tecnologia</a></div>
+        <div class="footer-col"><h5>Suporte</h5><a href="#">Meus pedidos</a><a href="#">Rastreio</a><a href="#">Contato</a></div>
+      </div>
+    </div>
+
+    <div class="footer-trust">
+      <div class="trust-card">
+        <span class="ra">ReclameAQUI</span>
+        <div class="score">8.8<small>/10</small></div>
+        <p>Avaliação ilustrativa — substituir pela nota real da marca.</p>
+      </div>
+      <div class="trust-card wpp">
+        <b>Fale com a gente</b>
+        <span>Atendimento via WhatsApp</span>
+        <button class="btn btn-fluor" style="width:auto" onclick="window.open('https://wa.me/5547997732880','_blank')">Iniciar conversa</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-logo"><img src="./assets/brand/logo-hidrabene-derma.webp" alt="Hidrabene Derma" width="160" height="26" loading="lazy" /></div>
+      <p class="footer-copy">© 2026 Hidrabene Derma. Todos os direitos reservados.<br>Página não indexada — uso interno.</p>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M16 3c.3 2.3 1.7 3.9 4 4.2v3c-1.5 0-2.9-.5-4-1.3v6.1c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6c.3 0 .7 0 1 .1v3.1c-.3-.1-.7-.2-1-.2-1.6 0-3 1.3-3 3s1.4 3 3 3 3-1.3 3-3V3h3z"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ░░ JAVASCRIPT ░░ -->
+  <script>
+    function irOferta(){ document.getElementById('oferta').scrollIntoView({behavior:'smooth'}); }
+    function scrollTo2(sel){ var el=document.querySelector(sel); if(el) el.scrollIntoView({behavior:'smooth'}); }
+
+    // Galeria
+    function setGallery(btn, src){
+      document.querySelectorAll('.gallery-thumb').forEach(function(t){ t.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById('galleryMain').src = src;
+    }
+
+    // Seletor de quantidade (hero)
+    var kitSelecionado = '1-unidade';
+    function selQty(row){
+      document.querySelectorAll('.qty-row').forEach(function(r){ r.classList.remove('selected'); });
+      row.classList.add('selected');
+      kitSelecionado = row.dataset.kit;
+      // sticky bar reflete o preço
+      document.getElementById('sbNow').textContent = row.dataset.now;
+      document.getElementById('sbOld').textContent = row.dataset.old;
+      atualizarFrete();
+    }
+
+    // Barra de progresso — desbloqueia frete grátis conforme o valor do kit
+    var FRETE_MIN = 200;
+    function precoBRL(t){ return parseFloat(String(t||'').replace(/[^\d,]/g,'').replace(',','.')) || 0; }
+    function atualizarFrete(){
+      var row = document.querySelector('.qty-row.selected');
+      var v = row ? precoBRL(row.dataset.now) : 0;
+      var ok = v >= FRETE_MIN;
+      var pct = Math.max(6, Math.min(100, Math.round(v / FRETE_MIN * 100)));
+      var fill = document.getElementById('freeFill'); if(fill) fill.style.width = pct + '%';
+      var box = document.querySelector('.freebar'); if(box) box.classList.toggle('on', ok);
+      var msg = document.getElementById('freeMsg');
+      if(msg) msg.textContent = ok ? 'Frete grátis desbloqueado!' : 'Desbloqueie frete grátis';
+    }
+    atualizarFrete();
+
+    // Raspadinha (scratch-to-reveal)
+    (function(){
+      var c = document.getElementById('scratchCanvas');
+      if(!c) return;
+      var ctx = c.getContext('2d');
+      var painting = false, cleared = false;
+      function size(){
+        var r = c.getBoundingClientRect();
+        c.width = r.width; c.height = r.height;
+        var g = ctx.createLinearGradient(0,0,c.width,c.height);
+        g.addColorStop(0,'#E191A0'); g.addColorStop(1,'#C9788A');
+        ctx.fillStyle = g; ctx.fillRect(0,0,c.width,c.height);
+        ctx.fillStyle = 'rgba(255,255,255,0.92)';
+        ctx.font = '700 13px Poppins, Arial, sans-serif';
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText('Raspe aqui ✦', c.width/2, c.height/2);
+      }
+      function pos(e){
+        var r = c.getBoundingClientRect();
+        var p = e.touches ? e.touches[0] : e;
+        return { x:p.clientX - r.left, y:p.clientY - r.top };
+      }
+      function scratch(e){
+        if(!painting) return;
+        var p = pos(e);
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath(); ctx.arc(p.x, p.y, 20, 0, Math.PI*2); ctx.fill();
+        if(e.cancelable) e.preventDefault();
+      }
+      function pct(){
+        try {
+          var d = ctx.getImageData(0,0,c.width,c.height).data, clear=0;
+          for(var i=3;i<d.length;i+=4*40){ if(d[i]===0) clear++; }
+          return clear / (d.length/(4*40));
+        } catch(_) { return 0; }
+      }
+      function maybeReveal(){
+        if(cleared) return;
+        if(pct() > 0.5){ cleared = true; c.style.transition='opacity .4s'; c.style.opacity='0'; setTimeout(function(){ c.style.display='none'; },420); }
+      }
+      function start(e){ painting=true; scratch(e); }
+      function end(){ painting=false; maybeReveal(); }
+      c.addEventListener('mousedown',start); c.addEventListener('mousemove',scratch);
+      window.addEventListener('mouseup',end);
+      c.addEventListener('touchstart',start,{passive:false}); c.addEventListener('touchmove',scratch,{passive:false});
+      c.addEventListener('touchend',end);
+      if('ResizeObserver' in window){ new ResizeObserver(function(){ if(!cleared) size(); }).observe(c); }
+      size();
+    })();
+
+    // Sticky buy bar — aparece após sair do hero, some perto do footer
+    (function(){
+      var bar = document.getElementById('stickybar');
+      var hero = document.getElementById('oferta');
+      var footer = document.querySelector('.footer');
+      if(!bar || !hero) return;
+      window.addEventListener('scroll', function(){
+        var heroBottom = hero.getBoundingClientRect().bottom;
+        var footTop = footer ? footer.getBoundingClientRect().top : 99999;
+        var show = heroBottom < 0 && footTop > window.innerHeight;
+        bar.classList.toggle('show', show);
+      }, { passive:true });
+    })();
+
+    // FAQ
+    function toggleFaq(btn){
+      var item = btn.closest('.faq-item');
+      var open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el){ el.classList.remove('open'); });
+      if(!open) item.classList.add('open');
+    }
+
+    // Checkout — Yampi: um link próprio por kit (preço/oferta já configurados na Yampi)
+    var CHECKOUT_URLS = {
+      '1-unidade':  'https://hidrabene.pay.yampi.com.br/r/FQH20J70UC',
+      '3-unidades': 'https://hidrabene.pay.yampi.com.br/r/KIAU1RFFXS'
+      // 6 e 10 unidades: links + cupons a definir
+      // '6-unidades':  '',
+      // '10-unidades': ''
+    };
+    function comprarAgora(kit){
+      var url = CHECKOUT_URLS[kit];
+      if(url){ window.location.href = url; return; }
+      alert('Protetor Solar Facial FPS 70 Clareador' + (kit ? '\nOpção: ' + kit : '') + '\n\nLink de checkout não configurado para esta opção.');
+    }
+    function comprarSelecionado(){ comprarAgora(kitSelecionado); }
+
+    // Autoplay de vídeos visíveis (iOS exige muted antes do play) — pronto p/ quando entrar <video>
+    (function(){
+      var vids = document.querySelectorAll('.vid-inview');
+      if(!vids.length) return;
+      function tryPlay(v){ v.muted=true; v.defaultMuted=true; var p=v.play(); if(p&&p.catch) p.catch(function(){ try{v.load();v.play().catch(function(){});}catch(e){} }); }
+      if(!('IntersectionObserver' in window)){ vids.forEach(tryPlay); return; }
+      var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) tryPlay(e.target); else e.target.pause(); }); },{threshold:0.25});
+      vids.forEach(function(v){ io.observe(v); });
+    })();
+  </script>
+
+  <!-- Utmify Pixel -->
+  <script>
+    window.pixelId = "6a3af228cd6a58108c27902c";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <!-- Utmify UTMs -->
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+
+</body>
+</html>

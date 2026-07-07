@@ -478,6 +478,32 @@
     /* impressão/PDF: esconde a barra fixa de compra (senão repete em toda página) */
     @media print { #stickybar { display:none !important; } }
   </style>
+
+  <script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+
+  <script>
+    window.pixelId = "6a3af228cd6a58108c27902c";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <script>
+    window.googlePixelId = "6a49c263bf29386f748b7a2d";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+    document.head.appendChild(a);
+  </script>
 </head>
 <body>
 
@@ -1033,25 +1059,6 @@
       vids.forEach(function(v){ io.observe(v); });
     })();
   </script>
-
-  <!-- Utmify Pixel -->
-  <script>
-    window.pixelId = "6a3af228cd6a58108c27902c";
-    var a = document.createElement("script");
-    a.setAttribute("async", "");
-    a.setAttribute("defer", "");
-    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-    document.head.appendChild(a);
-  </script>
-
-  <!-- Utmify UTMs -->
-  <script
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    async
-    defer
-  ></script>
 
 </body>
 </html>

@@ -931,8 +931,8 @@
       atualizarFrete();
     }
 
-    // Barra de progresso — desbloqueia frete grátis conforme o valor do kit
-    var FRETE_MIN = 200;
+    // Barra de progresso — desbloqueia frete grátis conforme o valor do kit (libera no kit de 6)
+    var FRETE_MIN = 149.90;
     function precoBRL(t){ return parseFloat(String(t||'').replace(/[^\d,]/g,'').replace(',','.')) || 0; }
     function atualizarFrete(){
       var row = document.querySelector('.qty-row.selected');
